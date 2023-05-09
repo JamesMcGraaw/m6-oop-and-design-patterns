@@ -4,6 +4,7 @@ require_once 'Ford.php';
 require_once 'Vehicle.php';
 require_once 'Meerkat.php';
 
+
 $myCar = new Ford();
 
 echo '<p>My car is a ' . $myCar->getManufacturer() . '</p>';
