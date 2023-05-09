@@ -2,8 +2,8 @@
 
 class Pig1
 {
-    private string $name;
-    private float $weight;
-    private string $colour = 'pink';
-    private string $species;
+    public string $name;
+    public float $weight;
+    public string $colour = 'pink';
+    public string $species;
 }
