@@ -10,9 +10,9 @@ class Cow
         $this->name = $name;
     }
 
-    public function eat(string $food): string
+    public function eat(Grass $food): string
     {
-        return 'Mmm ' . $food;
+        return 'Mmm ' . $food->getFoodType();
     }
 
     public function getName(): string
