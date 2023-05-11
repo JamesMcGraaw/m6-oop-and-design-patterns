@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Animals;
+namespace FarmApp\Animals;
 class Cow
 {
     private string $name;
