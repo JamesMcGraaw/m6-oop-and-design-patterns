@@ -1,0 +1,19 @@
+{
+  "name": "vendor_name/iofarm",
+  "description": "A farmyard app",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "James McGraw-Allen",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "FarmApp\\": "src/"
+    }
+  }
+}
