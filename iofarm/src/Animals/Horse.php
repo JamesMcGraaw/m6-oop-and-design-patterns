@@ -1,7 +1,8 @@
 <?php
 
 namespace FarmApp\Animals;
-class Pig
+
+class Horse
 {
     private string $name;
 
