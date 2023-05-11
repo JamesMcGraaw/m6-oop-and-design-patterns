@@ -7,14 +7,14 @@ class CowTest extends TestCase
 {
     public function testEatReturnsValidStringGivenValidFood()
     {
-        $cow = new Cow();
+        $cow = new Cow('Daisy');
         $result = $cow->eat('grass');
         $this->assertEquals('Mmm grass', $result);
     }
 
     public function testEatThrowsExceptionGivenInvalidType()
     {
-        $cow = new Cow();
+        $cow = new Cow('Daisy');
         $this->expectException(\TypeError::class);
         // The next line should throw an error because of the type hinting
         $result = $cow->eat([]);
