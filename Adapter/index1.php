@@ -29,6 +29,6 @@ function feedAnimal($animal)
 $pig = new Pig();
 feedAnimal($pig);
 
-$cow = new Cow();
+$cow = new \src\Animals\Cow();
 feedAnimal($cow);
 

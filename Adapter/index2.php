@@ -21,7 +21,7 @@ class Cow
     }
 }
 
-class CowAdapter extends Cow
+class CowAdapter extends \src\Animals\Cow
 {
     public function eat(): string
     {
