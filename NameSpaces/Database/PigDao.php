@@ -11,7 +11,7 @@ class PigDao
 
     public function __construct()
     {
-        $this->db = new Database();
+        $this->db = new Database(); // Violates Dependency Inversion Principle
     }
 
     public function fetchAll(): array

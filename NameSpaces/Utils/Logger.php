@@ -14,7 +14,7 @@ class Logger {
 
     public function log(string $data): void
     {
-        $logFilePtr = fopen($this->logFile, 'a');
+        $logFilePtr = fopen($this->logFile, 'a'); // Appends the current file (Can do read, write or append)
         fwrite($logFilePtr, print_r($data, true));
         fclose($logFilePtr);
     }

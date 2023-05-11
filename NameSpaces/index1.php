@@ -1,5 +1,7 @@
 <?php
 
+// Example of a failure because the namespaces aren't working
+
 require_once 'Database/Logger.php';
 require_once 'Database/PigDao.php';
 require_once 'Utils/Logger.php';
