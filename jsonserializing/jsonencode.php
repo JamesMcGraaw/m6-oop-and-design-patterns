@@ -1,5 +1,7 @@
 <?php
 //array example
+
+header('Content-Type: application/json; charset=utf-8');
 $names = [
     ['name' => 'Cuthbert'],
     ['name' => 'Herbert'],
@@ -12,6 +14,14 @@ echo json_encode($names);
 class Duck implements JsonSerializable {
     private $name = 'Quack Efron';
     protected $age = 55;
+
+    /**
+     * @param string $name
+     */
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
 
     /**
      * @return string
@@ -59,10 +69,13 @@ class Duckling extends Duck {
     }
 }
 
+
 $duck = new Duck();
+$duck->setName('Ian');
 echo json_encode($duck);
 // Outputs {"name":"Quack Efron","age":55}
 
 $duckling = new Duckling();
+$duckling->setName('Tray');
 echo json_encode($duckling);
 // Outputs {"name":"Quack Efron","age":55,"favColour":"yellow"}
